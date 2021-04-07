@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+ 
+ body {
+     background-color: #E5BE01;
+     text-align: center;
+ }
+
+ h1 {
+     color: aqua;
+     font-family: 'Dela Gothic One', cursive;
+ }
+
+ .navebarra{
+     text-align: center;
+ }
