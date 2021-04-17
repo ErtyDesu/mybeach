@@ -19,7 +19,6 @@
         <th scope="col">Site</th>
         <th scope="col">Beds</th>
         <th scope="col">Cost</th>
-        <th scope="col">Show</th>
         <th scope="col">Edit</th>
         <th scope="col">Destroy</th>
       </tr>
@@ -28,14 +27,13 @@
     <tbody>
       <% @appartaments.each do |appartament| %>
       <tr>
-        <td><%= appartament.name %></td>
+        <td><%= link_to appartament.name, appartament %></td>
         <td><%= appartament.place %></td>
         <td><%= appartament.address %></td>
         <td><%= appartament.phone %></td>
         <td><%= appartament.site %></td>
         <td><%= appartament.beds %></td>
         <td><%= appartament.cost %></td>
-        <td><%= link_to 'Show', appartament %></td>
         <td><%= link_to 'Edit', edit_appartament_path(appartament) %></td>
         <td><%= link_to 'Destroy', appartament, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
