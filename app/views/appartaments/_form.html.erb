@@ -11,37 +11,48 @@
     </div>
   <% end %>
 
-  <div class="field">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm form-label">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+    </div>
+  </div>
+      
+
+  <div class="form-label">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :place %>
     <%= form.text_field :place %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :address %>
     <%= form.text_field :address %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :phone %>
     <%= form.text_field :phone %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :site %>
     <%= form.text_field :site %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :beds %>
     <%= form.number_field :beds %>
   </div>
 
-  <div class="field">
+  <div class="form-label">
     <%= form.label :cost %>
     <%= form.number_field :cost %>
   </div>
