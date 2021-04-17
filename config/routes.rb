@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/bibbione', to: 'home#bibbione', as: 'bibbione'
   get '/paluda', to: 'home#paluda', as: 'paluda'
   get '/jesolo', to: 'home#jesolo', as: 'jesolo'
+  get '/appartments', to: 'home#appartments', as: 'appartments'
 
   root 'home#index'
 end

@@ -10,4 +10,8 @@ class HomeController < ApplicationController
 
     def jesolo
     end
+
+    def appartments
+    end
+    
 end
