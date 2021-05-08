@@ -35,5 +35,11 @@
   <%= @appartament.cost %>
 </p>
 
+<p>
+ <% if @appartament.cover.attached? %>
+  <%= image_tag url_for(@appartament.cover) %>
+ <% end %>
+</p>
+
 <%= link_to 'Edit', edit_appartament_path(@appartament) %> |
 <%= link_to 'Back', appartaments_path %>

@@ -25,6 +25,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm form-label">
+          <%= form.label :mail, class: 'form-label'%>
+          <%= form.text_field :mail, class: 'form-control' %>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm form-label">
           <%= form.label :place, class: 'form-label' %>
           <%= form.text_field :place, class: 'form-control' %>
         </div>
@@ -69,6 +77,14 @@
           <%= form.number_field :cost, class: 'form-control' %>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm form-label">
+          <%= form.label :cover, class: 'Cover' %>
+          <%= form.file_field :cover, class: 'form-control' %>
+        </div>
+      </div> 
     </div>
         
     <div class="actions btn btn-primary">
